@@ -51,13 +51,20 @@ h1 {
 
 .content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Aggiunta la disposizione in tre colonne */
+    grid-template-columns: 1fr; /* Utilizziamo una colonna singola su dispositivi mobili */
     gap: 20px;
     max-width: 1500px;
     margin: auto;
     background: #fff;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Aggiungiamo regole per dispositivi desktop */
+@media(min-width: 768px) {
+    .content {
+        grid-template-columns: repeat(3, 1fr); /* Disponiamo in tre colonne */
+    }
 }
 
 .text, .paraphrase, .comments {
@@ -107,11 +114,6 @@ ul li {
 ul li strong {
     color: #c0392b;
 }
-
-ul li em {
-    color: #27ae60;
-}
-
 
 ul li em {
     color: #27ae60;
