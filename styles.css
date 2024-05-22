@@ -51,7 +51,7 @@ h1 {
 
 .content {
     display: grid;
-    grid-template-columns: 1fr; /* Utilizziamo una colonna singola su dispositivi mobili */
+    grid-template-columns: 1fr; /* Una colonna singola su dispositivi mobili */
     gap: 20px;
     max-width: 1500px;
     margin: auto;
@@ -60,7 +60,7 @@ h1 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Aggiungiamo regole per dispositivi desktop */
+/* Regole per dispositivi desktop (schermi da 768px in su) */
 @media(min-width: 768px) {
     .content {
         grid-template-columns: repeat(3, 1fr); /* Disponiamo in tre colonne */
