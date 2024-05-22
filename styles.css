@@ -63,6 +63,7 @@ h1 {
 /* Regole per dispositivi desktop (schermi da 768px in su) */
 @media(min-width: 768px) {
     .content {
+        display: grid;
         grid-template-columns: repeat(3, 1fr); /* Disponiamo in tre colonne */
     }
 }
