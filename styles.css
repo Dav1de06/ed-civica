@@ -60,14 +60,6 @@ h1 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Regole per dispositivi desktop (schermi da 768px in su) */
-@media(min-width: 768px) {
-    .content {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr); /* Disponiamo in tre colonne */
-    }
-}
-
 .text, .paraphrase, .comments {
     padding: 10px;
     background-color: #ecf0f1;
@@ -80,6 +72,14 @@ h1 {
 
 .paraphrase {
     border-right: 2px solid #e74c3c;
+}
+
+/* Regole per dispositivi desktop (schermi da 768px in su) */
+@media(min-width: 768px) {
+    .content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Disponiamo in tre colonne */
+    }
 }
 
 p {
