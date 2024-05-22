@@ -64,6 +64,14 @@ p {
     color: #fff;
     padding: 10px;
     border-radius: 5px;
+    font-size: 1.2em; /* Ridurre la dimensione del testo */
+    width: 100%; /* Assicurarsi che la citazione occupi l'intera larghezza */
+    box-sizing: border-box; /* Includere padding e bordo nella larghezza */
+}
+@media(min-width: 768px) {
+    .quote {
+        font-size: 1.5em; /* Aumentare la dimensione del testo su schermi più grandi */
+    }
 }
 footer {
     text-align: center;
