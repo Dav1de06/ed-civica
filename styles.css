@@ -67,6 +67,10 @@ p {
     font-size: 1.2em; /* Ridurre la dimensione del testo */
     width: 100%; /* Assicurarsi che la citazione occupi l'intera larghezza */
     box-sizing: border-box; /* Includere padding e bordo nella larghezza */
+    display: flex; /* Utilizzare il layout flexbox */
+    justify-content: center; /* Centrare il contenuto orizzontalmente */
+    align-items: center; /* Centrare il contenuto verticalmente */
+    flex-wrap: wrap; /* Avvolgere il contenuto su più righe se necessario */
 }
 @media(min-width: 768px) {
     .quote {
